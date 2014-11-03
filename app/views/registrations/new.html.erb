@@ -1,0 +1,11 @@
+<%= form_for :registration, url: registrations_path do |r| %>
+	<p>
+		<%= r.label :name %>
+		<%= r.text_field :name %> <br />
+	</p>
+	<p>
+		<%= r.label :email %>
+		<%= r.email_field :email %>
+	</p>
+	<p><%= r.submit "Submit Registration" %></p>
+<% end %>

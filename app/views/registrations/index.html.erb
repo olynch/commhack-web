@@ -1,0 +1,5 @@
+<ul>
+<% Hackathon.current.registrations.each do |r| %>
+	<li> <%= r.name %>: <%= r.email %>, <%= link_to "Destroy", registration_path(r), method: :delete %> </li>
+<% end %>
+</ul>
